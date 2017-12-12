@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Index extends React.component {
+import "babel-polyfill";
+
+class Index extends React.Component {
 	render() {
 		return (
 			<html>

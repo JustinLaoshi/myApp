@@ -19,3 +19,6 @@ let PORT = 3000;
 var server = app.listen(PORT, function () {
     console.log('Node server is running on port ' + PORT);
 });
+
+
+// ITS BECAUSE BUNDLE ISNT IN PUBLIC!!!!!!
