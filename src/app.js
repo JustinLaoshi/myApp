@@ -4,10 +4,13 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
-app.get('/', (req, res) => {
-	res.send('<html><body><h1>hiiiiiii</h1><div id="root"></div></body></html>');
-	res.sendFile('index.html');
-})
+app.use(express.static('public'));
+app.use('/public', express.static(__dirname + '/public'));
+
+// app.get('/', (req, res) => {
+// 	//res.send('<html><body><h1>hiiiiiii</h1><div id="root"></div></body></html>');
+// 	res.sendFile(path.join(__dirname, '..'));
+// })
 
 //
 
